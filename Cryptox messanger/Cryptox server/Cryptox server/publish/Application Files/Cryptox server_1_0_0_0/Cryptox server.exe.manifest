@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Cryptox server.exe" version="1.0.0.0" publicKeyToken="54450e47014c45bc" language="neutral" processorArchitecture="amd64" type="win32" />
+  <description asmv2:iconFile="wifi-router.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Cryptox server" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+    <commandLine file="Cryptox server.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Cryptox server.exe" size="120808">
+      <assemblyIdentity name="Cryptox server" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>wh5NUJKuG2y/RVoQe3AU79JRX8L6RGK/zjqdHIyPJkg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Cryptox server.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wifi-router.ico" size="113380">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8kudcXO1mKtM8T2kF+dx9wvYAYzRRr9VEU+Mb51LG0c=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-GGBTJCV\wissem" issuerKeyHash="7cea9d4fa353daf39d08fc14cdea75ab27111c2c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>P3XmY9qT0pQ/EFpv7HlmKjYcgBePehayUrRBEfD1hSo=</DigestValue></Reference></SignedInfo><SignatureValue>iDZHln1Ude0BPzC/kkTOS7SZwMv3ZCi/Hk5dGRW0FA2JDtIgrJRyMec8A8tZVR6dAfFHYE3VcdnXMjBi0amgyGZf/JxiJpT5yqEN9ozPvSgXCacgBGpmmxkks+NmJAPc9f5YSACOs5FpgrddQq0QCi5V9ggRF6joAsOU9AN5cug=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>3HG0Qod34fNL9GhHDKvm6iS48vHfGReJHILPCkv9oRe/M5isTsDAZUIF51C6lbxVEKUoo/tpm2LTIw1/+IGUgXcgm0e20wcjKL9HoSTklyRfezNBuJCsxgHMETIvx53YwFv62q3zk1iBGJJ+zvT+mCiIzkXrZbb6YX7H4ifwOdE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="2a85f5f01141b452b2167a8f17801c362a6679ec6f5a103f94d293da63e6753f" Description="" Url=""><as:assemblyIdentity name="Cryptox server.exe" version="1.0.0.0" publicKeyToken="54450e47014c45bc" language="neutral" processorArchitecture="amd64" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-GGBTJCV\wissem</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>WHhqt6UC/nHuTEhIIeeCCWvdEx7jBK8l5vUKKyOFb4U=</DigestValue></Reference></SignedInfo><SignatureValue>jgn58XVoLMCSxSvp6yzWZgyPbymUBf1gZ25tTSEe01IbtNdDUwSVwapXb3bQ6xUV/f9HhB+obX0B9A+UGS+JUU/i9iQNG8IkPoSeJvDCMV/0rl5ew5yS605zwrFawvRpb5R6TErzVZ+FaiFLtnrPZ1KJ54aHBWMVjZXXg8RR+KE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>3HG0Qod34fNL9GhHDKvm6iS48vHfGReJHILPCkv9oRe/M5isTsDAZUIF51C6lbxVEKUoo/tpm2LTIw1/+IGUgXcgm0e20wcjKL9HoSTklyRfezNBuJCsxgHMETIvx53YwFv62q3zk1iBGJJ+zvT+mCiIzkXrZbb6YX7H4ifwOdE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB8TCCAVqgAwIBAgIQKTDq/pibJ6dNfSIG8UcSwzANBgkqhkiG9w0BAQsFADA3MTUwMwYDVQQDHiwARABFAFMASwBUAE8AUAAtAEcARwBCAFQASgBDAFYAXAB3AGkAcwBzAGUAbTAeFw0yNDAzMzEwMDUzMTVaFw0yNTAzMzEwNjUzMTVaMDcxNTAzBgNVBAMeLABEAEUAUwBLAFQATwBQAC0ARwBHAEIAVABKAEMAVgBcAHcAaQBzAHMAZQBtMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDccbRCh3fh80v0aEcMq+bqJLjy8d8ZF4kcgs8KS/2hF78zmKxOwMBlQgXnULqVvFUQpSij+2mbYtMjDX/4gZSBdyCbR7bTByMov0ehJOSXJF97M0G4kKzGAcwRMi/HndjAW/rarfOTWIEYkn7O9P6YKIjORetltvphfsfiJ/A50QIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAGyq8trLKrfbK+5yxNpD+SyGIMBbj4BePxB/NgS+HL2ToFiXIuZVYwDYrz4bHlVNls/CwdtN8TuDd+X6zx0Bf1Fqhg1dcuR7ux6e6qoYDvFce/WnCGxcqdkmGfo2tBO9PEZAgCyyWQ/QHdbSVHC0sfoajgQn49MWN7AVBoOpkpGq</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
